@@ -31,7 +31,8 @@ function App() {
           <div></div>
         </div>
       )}
-      {pokemons.length > 0 && <h1>It works</h1>}
+      {pokemons.length > 0 &&
+        pokemons.map((poke) => <div key={poke.name}>{poke.name}</div>)}
     </div>
   );
 }
